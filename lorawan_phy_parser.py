@@ -878,7 +878,7 @@ def parse_frm_payload(hex_data, askey, devaddr, dir_down, fcnt_hex):
     m = LoRaMacPayloadEncrypt(hex_data, askey,
                                 devaddr, dir_down, fcnt_hex)
     m = binascii.b2a_hex(m)
-    print("  x %s" % " ".join(str2hexstr(m)))
+    print("  x %s" % " ".join(hexstr2array(m)))
     return
 
 '''
